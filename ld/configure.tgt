@@ -1039,6 +1039,10 @@ esac
 NATIVE_LIB_DIRS='/usr/local/lib /lib /usr/lib'
 case "${target}" in
 
+*-*-chroma*)
+  NATIVE_LIB_DIRS='/common/libraries'
+  ;;
+
 *-*-dragonfly*)
   NATIVE_LIB_DIRS='/lib /usr/lib /usr/pkg/lib /usr/local/lib'
   ;;
