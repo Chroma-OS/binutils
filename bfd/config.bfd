@@ -724,6 +724,11 @@ case "${targ}" in
     targ_defvec=i386_elf32_vec
     targ_selvecs="iamcu_elf32_vec i386_pe_vec i386_pei_vec"
     ;;
+  x86_64-*-chroma*)
+    targ_defvec=x86_64_elf64_vec
+    targ_selvecs=i386_elf32_vec
+    want64=true
+    ;;
   i[3-7]86-*-interix*)
     targ_defvec=i386_pei_vec
     targ_selvecs="i386_pe_vec"
